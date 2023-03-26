@@ -39,6 +39,8 @@ main {
     border-radius: 5px;
     width: 60%;
     height: 30rem;
+    display: flex;
+    flex-direction: column;
 }
 
 #open-modal {
@@ -59,16 +61,24 @@ h1 {
 
 h2 {
     margin-top: 50px;
-    margin-left: 50px;
     border-bottom: solid;
-    margin-right: 50px;
     padding-bottom: 20px;
+    width: 90%;
+    margin: auto;
+    padding-top: 45px;
 }
 
 #button-div {
     border-top: solid;
-    width: 62rem;
+    width: 90%;
     display: flex;
     justify-content: center;
     padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+p {
+    overflow-wrap: break-word;
+    margin-left: 16px;
+    margin-right: 16px;
 }
