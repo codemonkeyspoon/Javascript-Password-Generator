@@ -19,39 +19,16 @@
         <div class="card-body">
           <textarea
             readonly
-            id="result"
+            id="password"
             placeholder="Your Secure Password"
             aria-label="Generated Password"
           ></textarea>
         </div>
         <div class="card-footer">
-          <button id="open-modal" class="btn">Generate Password</button>
+          <button class="btn" id="generate">Generate Password</button>
         </div>
       </div>
     </div>
-    <!--Password customization modal-->
-    <div class="modal" id="modal">
-      <div class="input-group">
-          <label>Password length <span id="length-result">10</span></label>
-          <input type="range" id="length" min='8' max='128' step="1" />
-
-          <label for="lowercase">Include Lowercase</label>
-          <input type="checkbox"  id="lowercase">
-
-          <label for="uppercase">Include Uppercase</label>
-          <input type="checkbox" id="uppercase">
-
-          <label>Include numbers</label> 
-          <input type="checkbox" id="numbers" checked />
-
-          <label for="spec-char">Special Characters</label>
-          <input type="checkbox" id="spec-char" checked />
-
-          <button class="generate-btn" id="generate">
-              Generate
-            </button>
-      </div>
-  </div>
     <script src="./assets/javascript/script.js"></script>
   </body>
 </html>
