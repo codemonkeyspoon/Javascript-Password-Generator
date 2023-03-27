@@ -1,52 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <title>Document</title>
-</head>
-<body>
-    <main>
-        <h1>
-            Password Generator
-        </h1>
-        <div class="password-div">
-            <h2>
-                Generate a Password
-            </h2>
-            <div class="text">
-                <div id="pass-box"><p id="result">Your Secure Password</p></div>
-                <div id="button-div">
-                    <button id="open-modal">Generate Password</button>
-                </div>
-            </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Password Generator</h1>
+      </header>
+      <div class="card">
+        <div class="card-header">
+          <h2>Generate a Password</h2>
         </div>
-    </main>
+        <div class="card-body">
+          <textarea
+            readonly
+            id="result"
+            placeholder="Your Secure Password"
+            aria-label="Generated Password"
+          ></textarea>
+        </div>
+        <div class="card-footer">
+          <button id="open-modal" class="btn">Generate Password</button>
+        </div>
+      </div>
+    </div>
     <!--Password customization modal-->
     <div class="modal" id="modal">
-        <div class="input-group">
-            <label>Password length <span id="length-result">10</span></label>
-            <input type="range" id="length" min='8' max='128' step="1" />
+      <div class="input-group">
+          <label>Password length <span id="length-result">10</span></label>
+          <input type="range" id="length" min='8' max='128' step="1" />
 
-            <label for="lowercase">Include Lowercase</label>
-            <input type="checkbox"  id="lowercase">
+          <label for="lowercase">Include Lowercase</label>
+          <input type="checkbox"  id="lowercase">
 
-            <label for="uppercase">Include Uppercase</label>
-            <input type="checkbox" id="uppercase">
+          <label for="uppercase">Include Uppercase</label>
+          <input type="checkbox" id="uppercase">
 
-            <label>Include numbers</label> 
-            <input type="checkbox" id="numbers" checked />
+          <label>Include numbers</label> 
+          <input type="checkbox" id="numbers" checked />
 
-            <label for="spec-char">Special Characters</label>
-            <input type="checkbox" id="spec-char" checked />
+          <label for="spec-char">Special Characters</label>
+          <input type="checkbox" id="spec-char" checked />
 
-            <button class="generate-btn" id="generate">
-                Generate
-              </button>
-        </div>
-    </div>
-<script src="./assets/javascript/script.js"></script>
-</body>
+          <button class="generate-btn" id="generate">
+              Generate
+            </button>
+      </div>
+  </div>
+    <script src="./assets/javascript/script.js"></script>
+  </body>
 </html>
